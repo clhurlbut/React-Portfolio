@@ -9,27 +9,27 @@ function Navigation(props) {
     return (
         <header className="flex-row px-1">
             <h2>
-                <a data-testid="link" href="/">
+                <a href="/">
                     Cassandra Hurlbut
           </a>
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className="mx-2">
-                        <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-                            About Me
+                    <li className="mx-2" >
+                        <a href="#about" onClick={() => setContactSelected(false)}>
+                            About
               </a>
                     </li>
                     <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                        <span onClick={() => setContactSelected(true)}>Contact Me</span>
+                        <span onClick={() => setContactSelected(true)}>Contact</span>
                     </li>
-                    <li className="mx-2">
-                        <a data-testid="about" href="#projects" onClick={() => setContactSelected(false)}>
+                    <li>
+                        <a href="#projects" onClick={() => setContactSelected(false)}>
                             Projects
               </a>
                     </li>
                     <li className="mx-2">
-                        <a data-testid="about" href="#resume" onClick={() => setContactSelected(false)}>
+                        <a href="#resume" onClick={() => setContactSelected(false)}>
                             Resume
               </a>
                     </li>
