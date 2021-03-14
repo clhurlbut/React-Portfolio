@@ -7,32 +7,25 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-
-
-  const [contactSelected, setContactSelected] = useState(false);
+  const [content] = useState(["about", "projects", "contactForm", "resume"]);
+  const [contentSelected, setContentSelected] = useState(content[0])
 
   return (
-    <div>
-      <Navigation
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      >
-      </Navigation>
+    <div className="App">
+      <header>
+        <Navigation contentSelected={contentSelected}
+          setContentSelected={setContentSelected}
+          className="margin-bottom" />
+      </header>
       <main>
-        {!contactSelected ? (
-          <>
-            <About></About>
-            <Projects>
-            </Projects>
-            <Resume></Resume>
-          </>
-        ) : (
-            <Contact></Contact>
-          )}
+        <About />
+        <Projects />
+        <Contact />
+        <Resume />
       </main>
-      <Footer></Footer>
-    </div>
+      <Footer />
 
+    </div>
   );
 }
 

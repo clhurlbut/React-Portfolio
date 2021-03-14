@@ -2,7 +2,7 @@ import React from "react"
 import bgImage from '../../assets/photos/heroBG.jpg'
 function AboutMe() {
     return (
-        <section className="my-5">
+        <section className="my-5" id='about'>
             <h1 id="about">Who Am I?</h1>
             <img src={bgImage} className="my-2" style={{ width: "100%" }} alt="cover" />
             <div className="my-2">
