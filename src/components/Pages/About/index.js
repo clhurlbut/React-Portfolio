@@ -1,10 +1,8 @@
 import React from "react"
-import bgImage from '../../assets/photos/heroBG.jpg'
 function AboutMe() {
     return (
-        <section className="my-5" id='about'>
+        <section className="my-5" id='About'>
             <h1 id="about">Who Am I?</h1>
-            <img src={bgImage} className="my-2" style={{ width: "100%" }} alt="cover" />
             <div className="my-2">
                 <p>
                     I graduated from Columbia College Hollywood with a BFA in Cinema Producing and Screenwriting.

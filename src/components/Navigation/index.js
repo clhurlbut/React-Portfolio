@@ -1,38 +1,29 @@
-import React from "react"
+import React from 'react';
 
-function Navigation() {
-
+function Navigation(props) {
+    const tabs = ['About', 'Contact', 'Projects', 'Resume'];
     return (
-        <header className="flex-row px-1">
+        <header className="flex-row">
             <h2>
                 <a href="/">
-                    Cassandra Hurlbut
+                    <span >🐴</span> Cassandra Hurlbut
           </a>
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className="mx-2" >
-                        <a href="#about">
-                            About
-                        </a>
-                    </li>
-                    <li className="mx-2">
-                        <a href="#contact">
-                            Contact
-                        </a>
-
-                    </li>
-                    <li className="mx-2">
-                        <a href="#projects">
-                            Projects
-                        </a>
-                    </li>
-                    <li className="mx-2">
-                        <a href="#resume">
-                            Resume
-                        </a>
-                    </li>
-
+                    {tabs.map(tab => (
+                        <li className="mx-1" key={tab}>
+                            <a
+                                href={'#' + tab.toLowerCase()}
+                                onClick={() => props.handlePageChange(tab)}
+                                className={
+                                    props.currentPage === tab ? 'nav-link active' : 'nav-link'
+                                }
+                            >
+                                {tab}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>

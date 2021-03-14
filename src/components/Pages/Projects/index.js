@@ -49,23 +49,21 @@ function Projects() {
 
 
     return (
-        <div className="flex-row container" id='projects'>
+        <div className="flex-row container" id='Projects'>
             {allProjects.map(project => {
                 return (
                     <div style={{ width: "18rem" }}>
-                        <div id="card-inner" className="border">
-                            <div id="card-front" >
-                                <img src={require(`../../assets/photos/${project.image}`).default} alt="screenshot of project" className="padding border" />
-
-                                <div className="card-body">
-                                    <h4 className="card-title">{project.name}</h4>
-                                    <p className="card-text">{project.description}</p>
-
+                        <div>
+                            <div  >
+                                <img src={require(`../../../assets/photos/${project.image}`).default} alt="screenshot of project" className="padding border" />
+                                <div>
+                                    <h4>{project.name}</h4>
+                                    <p>{project.description}</p>
                                 </div>
                             </div>
-                            <div id="card-back" >
+                            <div >
                                 <div>
-                                    <p> <a href={project.github} target="_blank" ><strong>Github </strong></a> </p>
+                                    <p><a href={project.github} target="_blank" ><strong>Github </strong></a> </p>
                                     <a href={project.deployed} target="_blank" className="align-middle"><strong>Deployed App</strong></a>
                                 </div>
                             </div>
@@ -74,10 +72,7 @@ function Projects() {
                 )
             })}
         </div>
-    )
-
-
-
+    );
 }
 
 
