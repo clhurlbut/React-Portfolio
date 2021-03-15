@@ -1209,6 +1209,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@iconify/icons-openmoji@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-openmoji/-/icons-openmoji-1.1.7.tgz#a5e33c9a3ec518161474075ca180dcb6861df211"
+  integrity sha512-Pez8PDrjDzXjRJX8LJ5fuzJqYe3L2Nb4UginMhlsGRMIPcxoyd9lfjkTFFB+6GihzJVF1yJlrwozXhu8l9DPdQ==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"

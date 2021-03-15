@@ -3,16 +3,16 @@ import React from 'react';
 function Navigation(props) {
     const tabs = ['About', 'Contact', 'Projects', 'Resume'];
     return (
-        <header className="header flex-row">
+        <header className="header flex-wrap">
             <h2>
                 <a href="/">
                     <span >🐴</span> Cassandra Hurlbut
           </a>
             </h2>
-            <nav>
-                <ul className="flex-row">
+            <nav >
+                <ul className="flex-wrap">
                     {tabs.map(tab => (
-                        <li className="mx-1" key={tab}>
+                        <li key={tab}>
                             <a
                                 href={'#' + tab.toLowerCase()}
                                 onClick={() => props.handlePageChange(tab)}

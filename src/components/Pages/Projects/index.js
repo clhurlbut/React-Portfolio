@@ -49,22 +49,24 @@ function Projects() {
 
 
     return (
-        <div className="projects flex-wrap container" id='Projects'>
+        <div className="flex-wrap">
             {allProjects.map(project => {
                 return (
 
-                    <div className="card px-2 my-2 space-around">
-                        <div>
-                            <img src={require(`../../../assets/photos/${project.image}`).default} alt="screenshot of project" className="padding border" />
-                            <div>
-                                <h4>{project.name}</h4>
-                                <p>{project.description}</p>
+                    <div id="flip-card">
+                        <div id="flip-data">
+                            <div id="flip-front">
+                                <img src={require(`../../../assets/photos/${project.image}`).default} alt="screenshot of project" className="padding border" />
+                                <div className="project-card">
+                                    <h3 className="project-name">{project.name}</h3>
+                                    <p className="project-description">{project.description}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div >
-                            <div>
-                                <p><a href={project.github} target="_blank" ><strong>Github </strong></a> </p>
-                                <a href={project.deployed} target="_blank" className="align-middle"><strong>Deployed App</strong></a>
+                            <div id="flip-back">
+                                <div>
+                                    <p><a href={project.github} target="_blank" rel="noreferrer" ><strong>Github </strong></a> </p>
+                                    <p><a href={project.deployed} target="_blank" rel="noreferrer" className="align-middle"><strong>Deployed App</strong></a></p>
+                                </div>
                             </div>
                         </div>
                     </div>

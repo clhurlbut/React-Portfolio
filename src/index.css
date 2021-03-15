@@ -41,16 +41,12 @@ body {
   font-family: 'Nexa Demo', bold;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Nexa Demo', bold;
-  font-weight: 500;
-  margin: 5px 0;
-  line-height: 1.25;
-}
-
 p {
   font-size: 1.1rem;
-  margin-top: 0;
+  margin: 10px;
+  border: 5px;
+  padding: 25px;
+  justify-content: center;
 }
 
 a {
@@ -66,10 +62,15 @@ a:hover {
 
 header {
   background: var(--header-img);
+  margin: auto;
+  padding: var(--spacing-one);
 }
 
 header a {
   color: var(--lighter);
+  padding: 7px 15px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 button {
@@ -95,15 +96,13 @@ button[disabled] {
 
 .bio-img {
   max-width: 40%;
+  height: fit-content;
 }
 
 img {
-  max-width: 100%;
-  object-fit: contain;
-}
-
-span[role='img'] {
-  cursor: default;
+  max-width: 70%;
+  padding-top: 28px;
+  padding-bottom: 8px;
 }
 
 form {
@@ -144,11 +143,16 @@ textarea {
   padding: 5px;
 }
 
+.margin {
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
 .container {
-  width: 85%;
+  margin: 10px 5px 10px 5px;
+  padding: 5px;
+  width: 100%;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .flex-row {
@@ -158,6 +162,7 @@ textarea {
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .space-between {
@@ -172,53 +177,62 @@ textarea {
   justify-content: flex-end;
 }
 
-.mx-1 {
-  margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
+#flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
 }
 
-.mx-2 {
-  margin-right: var(--spacing-two);
-  margin-left: var(--spacing-two);
+#flip-data {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  box-shadow: 2px 8px 12px 2px rgba(0, 0, 0, 0.2);
 }
 
-.my-1 {
-  margin-top: var(--spacing-one);
-  margin-bottom: var(--spacing-one);
+#flip-card:hover #flip-data {
+  transform: rotateY(180deg);
 }
 
-.my-2 {
-  margin-top: var(--spacing-two);
-  margin-bottom: var(--spacing-two);
+#flip-front, #flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border: 2px solid rgb(8, 8, 8);
+  border-radius: 20px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.my-5 {
-  margin-top: var(--spacing-five);
-  margin-bottom: var(--spacing-five);
+#flip-front {
+  background-color: #cccccc;
+  color: var(--darker);
 }
 
-.px-1 {
-  padding-right: var(--spacing-one);
-  padding-left: var(--spacing-one);
+#flip-back {
+  background-color: #cccccc;
+  color: var(--darker);
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.px-2 {
-  padding-right: var(--spacing-two);
-  padding-left: var(--spacing-two);
+.project-name {
+  padding: 3px;
 }
 
-.py-1 {
-  padding-top: var(--spacing-one);
-  padding-bottom: var(--spacing-one);
-}
-
-.py-2 {
-  padding-top: var(--spacing-two);
-  padding-bottom: var(--spacing-two);
+.project-description {
+  padding: 3px;
 }
 
 .card {
-  width: 25%;
+  /* width: 25%; */
   text-align: center;
 }
 
@@ -245,4 +259,14 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
 }

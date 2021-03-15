@@ -6,9 +6,9 @@ function Resume() {
         <section>
             <div className="resume container" id='Resume'>
                 <div className="flex-row">
-                    <div className="card">
+                    <div className="card margin">
                         <h2><strong>Technical Skills</strong></h2>
-                        <ul className="mx-1">
+                        <ul>
                             <li>HTML5</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
@@ -28,9 +28,9 @@ function Resume() {
                             <li>Github</li>
                         </ul>
                     </div>
-                    <div className="card">
+                    <div className="card margin">
                         <h2><strong>Additional Skills</strong></h2>
-                        <ul className="mx-1">
+                        <ul>
                             <li>Managerial Skills</li>
                             <li>Constant Contact and DonorPerfect Database Management</li>
                             <li>Social Media Management</li>
@@ -38,7 +38,7 @@ function Resume() {
 
                         </ul>
                     </div>
-                    <div className="card">
+                    <div className="card margin">
                         <h2><strong>Education</strong></h2>
                         <h4><strong>Columbia College Hollywood</strong></h4>
                         <span><b>Bachelors of Fine Arts in Cinema Screenwriting and Producing</b></span>
