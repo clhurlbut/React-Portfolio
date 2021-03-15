@@ -49,11 +49,11 @@ function Projects() {
 
 
     return (
-        <div className="projects flex-row container" id='Projects'>
+        <div className="projects flex-wrap container" id='Projects'>
             {allProjects.map(project => {
                 return (
 
-                    <div>
+                    <div className="card px-2 my-2 space-around">
                         <div>
                             <img src={require(`../../../assets/photos/${project.image}`).default} alt="screenshot of project" className="padding border" />
                             <div>
