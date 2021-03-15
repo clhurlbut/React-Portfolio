@@ -7,7 +7,7 @@ function Resume() {
             <div className="resume container" id='Resume'>
                 <div className="flex-row">
                     <div className="card">
-                        <h4><strong>Technical Skills</strong></h4>
+                        <h2><strong>Technical Skills</strong></h2>
                         <ul className="mx-1">
                             <li>HTML5</li>
                             <li>CSS</li>
@@ -29,7 +29,7 @@ function Resume() {
                         </ul>
                     </div>
                     <div className="card">
-                        <h4><strong>Additional Skills</strong></h4>
+                        <h2><strong>Additional Skills</strong></h2>
                         <ul className="mx-1">
                             <li>Managerial Skills</li>
                             <li>Constant Contact and DonorPerfect Database Management</li>
@@ -39,16 +39,16 @@ function Resume() {
                         </ul>
                     </div>
                     <div className="card">
-                        <h4><strong>Education</strong></h4>
-                        <h3><strong>Columbia College Hollywood</strong></h3>
+                        <h2><strong>Education</strong></h2>
+                        <h4><strong>Columbia College Hollywood</strong></h4>
                         <span><b>Bachelors of Fine Arts in Cinema Screenwriting and Producing</b></span>
                         <p> Magna Cum Laude, 2012 </p>
-                        <h3><strong>UCLA Extension</strong></h3>
+                        <h4><strong>UCLA Extension</strong></h4>
                         <span><strong>Certificate in Full-Stack Web Development</strong></span>
                         <p> In Progress, estimated completion date April 2021</p>
                     </div>
                     <div className="card">
-                        <h3><a href={resume} download="CLHurlbutResume.pdf"> Download Resume </a></h3>
+                        <h2><a href={resume} download="CLHurlbutResume.pdf"> Download Resume </a></h2>
                     </div>
 
 
