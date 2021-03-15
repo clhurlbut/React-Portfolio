@@ -49,29 +49,29 @@ function Projects() {
 
 
     return (
-        <div className="flex-row container" id='Projects'>
+        <div className="projects flex-row container" id='Projects'>
             {allProjects.map(project => {
                 return (
-                    <div style={{ width: "18rem" }}>
+
+                    <div>
                         <div>
-                            <div  >
-                                <img src={require(`../../../assets/photos/${project.image}`).default} alt="screenshot of project" className="padding border" />
-                                <div>
-                                    <h4>{project.name}</h4>
-                                    <p>{project.description}</p>
-                                </div>
+                            <img src={require(`../../../assets/photos/${project.image}`).default} alt="screenshot of project" className="padding border" />
+                            <div>
+                                <h4>{project.name}</h4>
+                                <p>{project.description}</p>
                             </div>
-                            <div >
-                                <div>
-                                    <p><a href={project.github} target="_blank" ><strong>Github </strong></a> </p>
-                                    <a href={project.deployed} target="_blank" className="align-middle"><strong>Deployed App</strong></a>
-                                </div>
+                        </div>
+                        <div >
+                            <div>
+                                <p><a href={project.github} target="_blank" ><strong>Github </strong></a> </p>
+                                <a href={project.deployed} target="_blank" className="align-middle"><strong>Deployed App</strong></a>
                             </div>
                         </div>
                     </div>
+
                 )
             })}
-        </div>
+        </div >
     );
 }
 

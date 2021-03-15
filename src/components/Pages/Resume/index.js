@@ -4,14 +4,14 @@ import resume from '../../../assets/resume/CLHurlbutResume.pdf';
 function Resume() {
     return (
         <section>
-            <div className="paper container" id='Resume'>
-                <div className="border">
+            <div className="resume container" id='Resume'>
+                <div>
                     <h2>Resume</h2>
                     <h3><a href={resume} download="CLHurlbutResume.pdf"> Download Resume </a></h3>
                 </div>
                 <div className="margin border">
                     <h3>Technical Skills</h3>
-                    <ul className="container mx-3 flex-left">
+                    <ul className="container mx-3">
                         <li>HTML5</li>
                         <li>CSS</li>
                         <li>JavaScript</li>

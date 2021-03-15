@@ -3,7 +3,7 @@ import React from 'react';
 function Navigation(props) {
     const tabs = ['About', 'Contact', 'Projects', 'Resume'];
     return (
-        <header className="flex-row">
+        <header className="header flex-row">
             <h2>
                 <a href="/">
                     <span >🐴</span> Cassandra Hurlbut

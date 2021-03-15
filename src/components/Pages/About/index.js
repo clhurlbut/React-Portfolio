@@ -1,7 +1,7 @@
 import React from "react"
 function AboutMe() {
     return (
-        <section className="my-5" id='About'>
+        <section className="about my-5" id='About'>
             <h1 id="about">Who Am I?</h1>
             <div className="my-2">
                 <p>
