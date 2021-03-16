@@ -7,36 +7,34 @@ import Contact from '../components/Pages/Contact';
 import Footer from '../components/Footer'
 
 function Portfolio() {
-    const [currentPage, handlePageChange] = useState('About');
-
-    const renderPage = () => {
-        // Add a switch statement that will return the appropriate component of the 'currentPage'
-        switch (currentPage) {
-            case 'About':
-                return <About />;
-            case 'Projects':
-                return <Projects />;
-            case 'Contact':
-                return <Contact />;
-            case 'Resume':
-                return <Resume />;
-
-            default:
-                return <About />;
-        }
-        //
-    };
+    /*  const [currentPage, handlePageChange] = useState('About');
+ 
+     const renderPage = () => {
+         // Add a switch statement that will return the appropriate component of the 'currentPage'
+         switch (currentPage) {
+             case 'About':
+                 return <About />;
+             case 'Projects':
+                 return <Projects />;
+             case 'Contact':
+                 return <Contact />;
+             case 'Resume':
+                 return <Resume />;
+ 
+             default:
+                 return <About />;
+         }
+         //
+     }; */
 
     return (
         <div>
-            <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-            <div>
-                {
-                    // Render the component returned by 'renderPage()'
-                    renderPage(currentPage)
-                    //
-                }
-            </div>
+            <Navigation />
+            <About />
+            <Projects />
+            <Resume />
+            <Contact />
+
             <Footer></Footer>
         </div>
     );
