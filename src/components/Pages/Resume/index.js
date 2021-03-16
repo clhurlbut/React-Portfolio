@@ -3,10 +3,10 @@ import resume from '../../../assets/resume/CLHurlbutResume.pdf';
 
 function Resume() {
     return (
-        <section>
-            <div className="resume container" id='Resume'>
-                <div className="flex-row">
-                    <div className="card margin">
+        <section className="flex-wrap">
+            <div id='Resume'>
+                <div className="flex-wrap">
+                    <div className="card">
                         <h2><strong>Technical Skills</strong></h2>
                         <ul>
                             <li>HTML5</li>
@@ -28,7 +28,7 @@ function Resume() {
                             <li>Github</li>
                         </ul>
                     </div>
-                    <div className="card margin">
+                    <div className="card">
                         <h2><strong>Additional Skills</strong></h2>
                         <ul>
                             <li>Managerial Skills</li>
@@ -37,17 +37,16 @@ function Resume() {
                             <li>FinalCut Pro, full Adobe Creative Suite</li>
 
                         </ul>
-                    </div>
-                    <div className="card margin">
+
                         <h2><strong>Education</strong></h2>
                         <h4><strong>Columbia College Hollywood</strong></h4>
-                        <span><b>Bachelors of Fine Arts in Cinema Screenwriting and Producing</b></span>
+                        <span><b>BFA in Cinema Screenwriting and Producing</b></span>
                         <p> Magna Cum Laude, 2012 </p>
                         <h4><strong>UCLA Extension</strong></h4>
-                        <span><strong>Certificate in Full-Stack Web Development</strong></span>
+                        <span><b>Certificate in Full-Stack Web Development</b></span>
                         <p> In Progress, estimated completion date April 2021</p>
                     </div>
-                    <div className="card">
+                    <div className="card download">
                         <h2><a href={resume} download="CLHurlbutResume.pdf"> Download Resume </a></h2>
                     </div>
 

@@ -5,20 +5,22 @@ main {
 }
 
 :root {
-  --primary: #2274A5;
+  --primary: #02080c;
   --secondary: #F75C03;
   --tertiary: #F1C40F;
   --fourth: #D90368;
   --fifth: #00CC66;
-  --light: #5587a3;
-  --lighter: #7a97a8;
-  --dark: #a83f02;
-  --darker: #531f01;
+  --light: #04507c;
+  --lighter: #2a9adb;
+  --dark: #01020a;
+  --darker: #070300;
   --error: tomato;
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-  --header-img: url(./assets/photos/hudbackground.jpg);
+  --header-img: url(./assets/photos/rainbowbrick.jpg);
+  --footer-img: url(./assets/photos/rainbowbrick.jpg);
+  --flipcard-img: url(./assets/photos/rainbowbrick-flipcard.jpg);
 }
 
 * {
@@ -67,10 +69,11 @@ header {
 }
 
 header a {
-  color: var(--lighter);
+  color: var(--dark);
   padding: 7px 15px;
   margin-left: 2px;
   margin-right: 2px;
+  font-size: 30px;
 }
 
 button {
@@ -106,7 +109,7 @@ img {
 }
 
 form {
-  width: 40%;
+  display: flex;
 }
 
 input {
@@ -132,15 +135,28 @@ nav a:hover {
   color: var(--tertiary)
 }
 
+nav a:active {
+  text-decoration: underline;
+  color: var(--fourth);
+}
+
 nav li {
   cursor: pointer;
 }
 
 textarea {
-  width: 600px;
+  max-width: 600px;
   height: 120px;
   border: 3px solid #cccccc;
   padding: 5px;
+}
+
+.download h2 a {
+  color: var(--tertiary);
+}
+
+.download h2 {
+  color: var(--fifth);
 }
 
 .margin {
@@ -210,12 +226,12 @@ textarea {
 }
 
 #flip-front {
-  background-color: #cccccc;
+  background: var(--flipcard-img);
   color: var(--darker);
 }
 
 #flip-back {
-  background-color: #cccccc;
+  background: var(--flipcard-img);
   color: var(--darker);
   transform: rotateY(180deg);
   display: flex;
@@ -248,7 +264,7 @@ button {
   padding: 10px 15px;
 }
 
-a {
+/* a {
   border-radius: 5px;
   color: var(--primary);
   font-weight: 600;
@@ -256,8 +272,9 @@ a {
   margin-left: -2px;
   margin-right: -2px;
 }
+ */
 
-.navActive {
+#navActive {
   color: var(--secondary);
 }
 
@@ -269,4 +286,11 @@ footer {
   display: flex;
   justify-content: center;
   margin-bottom: 0;
+  background-image: var(--footer-img);
+}
+
+#footerLink {
+  color: #01020a;
+  font-style: bold;
+  padding: 2px 7px 2px 7px;
 }

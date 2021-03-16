@@ -3,7 +3,7 @@ import ProfilePhoto from '../../../assets/photos/biopic.jpg';
 
 function AboutMe() {
     return (
-        <section className="about" id='About'>
+        <section className="flex-wrap" id='About'>
             <div className="flex-row container">
                 <img className="bio-img" src={ProfilePhoto} alt="Cassie on the beach with a hat" />
                 <div>

@@ -3,7 +3,7 @@ import React from 'react';
 function Navigation(props) {
     const tabs = ['About', 'Contact', 'Projects', 'Resume'];
     return (
-        <header className="header flex-wrap">
+        <header className="header">
             <h2>
                 <a href="/">
                     <span >🐴</span> Cassandra Hurlbut
@@ -16,6 +16,7 @@ function Navigation(props) {
                             <a
                                 href={'#' + tab.toLowerCase()}
                                 onClick={() => props.handlePageChange(tab)}
+                                activeClassName="navActive"
                                 className={
                                     props.currentPage === tab ? 'nav-link active' : 'nav-link'
                                 }
