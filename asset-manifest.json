@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.b4f083e0.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.287e93b6.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.287e93b6.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.5e4bff67.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.5e4bff67.js.map",
+    "static/js/2.43346611.chunk.js": "/react-portfolio/static/js/2.43346611.chunk.js",
+    "static/js/2.43346611.chunk.js.map": "/react-portfolio/static/js/2.43346611.chunk.js.map",
+    "static/js/3.11bb81f2.chunk.js": "/react-portfolio/static/js/3.11bb81f2.chunk.js",
+    "static/js/3.11bb81f2.chunk.js.map": "/react-portfolio/static/js/3.11bb81f2.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/main.b4f083e0.chunk.css.map": "/react-portfolio/static/css/main.b4f083e0.chunk.css.map",
+    "static/js/2.43346611.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.43346611.chunk.js.LICENSE.txt",
+    "static/media/CLHurlbutResume.11e9090d.pdf": "/react-portfolio/static/media/CLHurlbutResume.11e9090d.pdf",
+    "static/media/CassieHorses.jpg": "/react-portfolio/static/media/CassieHorses.6c6f5862.jpg",
+    "static/media/CassieSchool.jpg": "/react-portfolio/static/media/CassieSchool.db24ec8f.jpg",
+    "static/media/RunBuddyScreenshot.png": "/react-portfolio/static/media/RunBuddyScreenshot.f0227197.png",
+    "static/media/biopic.jpg": "/react-portfolio/static/media/biopic.ad789797.jpg",
+    "static/media/budgetTracker.jpg": "/react-portfolio/static/media/budgetTracker.5074a1e0.jpg",
+    "static/media/coachella.jpg": "/react-portfolio/static/media/coachella.52dbaaeb.jpg",
+    "static/media/heroBG.jpg": "/react-portfolio/static/media/heroBG.bd8fd07c.jpg",
+    "static/media/hudbackground.jpg": "/react-portfolio/static/media/hudbackground.68adc8a5.jpg",
+    "static/media/javascriptQuiz.jpg": "/react-portfolio/static/media/javascriptQuiz.84f9c625.jpg",
+    "static/media/meural.jpg": "/react-portfolio/static/media/meural.43a154a1.jpg",
+    "static/media/notetaker.jpg": "/react-portfolio/static/media/notetaker.7230cd6b.jpg",
+    "static/media/rainbowbrick-flipcard.jpg": "/react-portfolio/static/media/rainbowbrick-flipcard.c166beaf.jpg",
+    "static/media/rainbowbrick.jpg": "/react-portfolio/static/media/rainbowbrick.cca1b6e8.jpg",
+    "static/media/rex-rampage.png": "/react-portfolio/static/media/rex-rampage.6faf7520.png",
+    "static/media/screenshotQuiz.png": "/react-portfolio/static/media/screenshotQuiz.24bc2734.png",
+    "static/media/screenshotofApp.png": "/react-portfolio/static/media/screenshotofApp.fb96194f.png",
+    "static/media/sreenshot cookie 1.jpg": "/react-portfolio/static/media/sreenshot cookie 1.094de7be.jpg",
+    "static/media/virtualCookie.jpg": "/react-portfolio/static/media/virtualCookie.e8172b63.jpg",
+    "static/media/workdayScheduler.png": "/react-portfolio/static/media/workdayScheduler.fb96194f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e4bff67.js",
+    "static/js/2.43346611.chunk.js",
+    "static/css/main.b4f083e0.chunk.css",
+    "static/js/main.287e93b6.chunk.js"
+  ]
+}
