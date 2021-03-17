@@ -43,12 +43,12 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
    React node.JS CSS Javascript HTML  
 
   ## 💾 Screenshots
-  ![Screenshot of App 2]()
-  ![Screenshot of App]()
+  ![Screenshot of App](../src/assets/screenshots/screenshot1.jpg)
+  ![Screenshot of App](../src/assets/screenshots/screenshot2.jpg)
  
  ## 🖥️ Links 
 GitHub: https://github.com/clhurlbut/react-portfolio <br>
-Deployed Heroku App: 
+Deployed Github Pages: http://clhurlbut.github.io/react-portfolio/ <br>
 
   ## 🧑‍🤝‍🧑 Contributing
    [Contributor Covenant](https://www.contributor-covenant.org/)
