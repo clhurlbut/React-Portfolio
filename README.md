@@ -43,8 +43,8 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
    React node.JS CSS Javascript HTML  
 
   ## 💾 Screenshots
-  ![Screenshot of App](../src/assets/screenshots/screenshot1.jpg)
-  ![Screenshot of App](../src/assets/screenshots/screenshot2.jpg)
+  ![Screenshot of App](./src/assets/screenshots/screenshot1.jpg)
+  ![Screenshot of App](./src/assets/screenshots/screenshot2.jpg)
  
  ## 🖥️ Links 
 GitHub: https://github.com/clhurlbut/react-portfolio <br>
