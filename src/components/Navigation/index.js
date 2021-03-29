@@ -4,35 +4,16 @@ import Nav from 'react-bootstrap/Nav';
 
 
 function Navigation(props) {
+    const tabs = ['About', 'Contact', 'Projects', 'Resume'];
     return (
         <Navbar className="header">
-            <Navbar.Brand href="#about">🐴 Cassandra Hurlbut</Navbar.Brand>
+            <Navbar.Brand href="/">🐴 Cassandra Hurlbut</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href={"#about"}>About</Nav.Link>
-                    <Nav.Link href={"#projects"}>Projects</Nav.Link>
-                    <Nav.Link href={"#resume"}>Resume</Nav.Link>
-                    <Nav.Link href={"#contact"}>Contact</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
-    );
-}
-/* 
-function Navigation(props) {
-    const tabs = ['About', 'Contact', 'Projects', 'Resume'];
-    return (
-        <header className="header">
-            <h2>
-                <a href="/">
-                    <span >🐴</span> Cassandra Hurlbut
-          </a>
-            </h2>
-            <nav >
-                <ul className="flex-wrap">
+
                     {tabs.map(tab => (
-                        <li key={tab}>
+                        <Nav.Link key={tab}>
                             <a
                                 href={'#' + tab.toLowerCase()}
                                 onClick={() => props.handlePageChange(tab)}
@@ -43,12 +24,13 @@ function Navigation(props) {
                             >
                                 {tab}
                             </a>
-                        </li>
+                        </Nav.Link>
                     ))}
-                </ul>
-            </nav>
-        </header>
-    );
-} */
 
+
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+    );
+}
 export default Navigation;
