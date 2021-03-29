@@ -7,7 +7,7 @@ function Navigation(props) {
     const tabs = ['About', 'Contact', 'Projects', 'Resume'];
     return (
         <Navbar className="header">
-            <Navbar.Brand href="/">🐴 Cassandra Hurlbut</Navbar.Brand>
+            <Navbar.Brand href="#about">🐴 Cassandra Hurlbut</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
@@ -33,4 +33,5 @@ function Navigation(props) {
         </Navbar>
     );
 }
+
 export default Navigation;
