@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 import { validateEmail } from '../../../utils/helpers';
 
@@ -37,28 +39,32 @@ function Contact() {
     };
 
     return (
-        <section className="card" id='Contact'>
-            <h1>Contact Me!</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-                </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-                </div>
+        <section id='Contact'>
+            <h3><strong>Contact Me!</strong></h3>
+
+            <Form className="flex-wrap" onSubmit={handleSubmit}>
+                <Form.Group controlId="contactName">
+                    <Form.Label htmlFor="ame" >Name:</Form.Label>
+                    <Form.Control name="Name" as="textarea" rows={1} placeholder="Enter Name!" onBlur={handleChange} />
+                </Form.Group>
+                <Form.Group controlId="contactEmail">
+                    <Form.Label htmlFor="email" >Email:</Form.Label>
+                    <Form.Control name="Email" type="email" placeholder="Enter Email!" onBlur={handleChange} />
+                </Form.Group>
+                <Form.Group controlId="contactMessage">
+                    <Form.Label htmlFor="message">Message:</Form.Label>
+                    <Form.Control name="Message" as="textarea" rows={3} placeholder="Enter your message here!" onBlur={handleChange} />
+
+                </Form.Group>
                 {errorMessage && (
                     <div>
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button type="submit">Submit</button>
-            </form>
+                <Button variant="primary" type="submit">
+                    Submit!
+                </Button>
+            </Form>
         </section>
     );
 }

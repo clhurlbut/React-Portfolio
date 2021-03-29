@@ -57,15 +57,17 @@ a {
   font-weight: bold;
 }
 
+h3 {
+  text-align: center;
+}
+
 a:hover {
   text-decoration: underline;
   color: var(--fifth);
 }
 
-header {
+.header {
   background: var(--header-img);
-  margin: auto;
-  padding: var(--spacing-one);
 }
 
 header a {

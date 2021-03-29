@@ -1,18 +1,19 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+
 
 function Navigation(props) {
     const tabs = ['About', 'Contact', 'Projects', 'Resume'];
     return (
-        <header className="header">
-            <h2>
-                <a href="/">
-                    <span >🐴</span> Cassandra Hurlbut
-          </a>
-            </h2>
-            <nav >
-                <ul className="flex-wrap">
+        <Navbar className="header">
+            <Navbar.Brand href="/">🐴 Cassandra Hurlbut</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+
                     {tabs.map(tab => (
-                        <li key={tab}>
+                        <Nav.Link key={tab}>
                             <a
                                 href={'#' + tab.toLowerCase()}
                                 onClick={() => props.handlePageChange(tab)}
@@ -23,12 +24,13 @@ function Navigation(props) {
                             >
                                 {tab}
                             </a>
-                        </li>
+                        </Nav.Link>
                     ))}
-                </ul>
-            </nav>
-        </header>
+
+
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
     );
 }
-
 export default Navigation;
