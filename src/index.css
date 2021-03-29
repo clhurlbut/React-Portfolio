@@ -195,6 +195,10 @@ textarea {
   justify-content: flex-end;
 }
 
+#contactButton {
+  text-align: center;
+}
+
 #flip-card {
   background-color: transparent;
   width: 300px;
@@ -254,6 +258,7 @@ textarea {
   text-align: center;
 }
 
+/* 
 button {
   background: var(--primary);
   border: 0;
@@ -265,6 +270,7 @@ button {
   margin-bottom: 30px;
   padding: 10px 15px;
 }
+ */
 
 /* a {
   border-radius: 5px;

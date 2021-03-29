@@ -43,16 +43,16 @@ function Contact() {
             <h3><strong>Contact Me!</strong></h3>
 
             <Form className="flex-wrap" onSubmit={handleSubmit}>
-                <Form.Group controlId="contactName">
-                    <Form.Label htmlFor="ame" >Name:</Form.Label>
+                <Form.Group controlId="Name">
+                    <Form.Label >Name:</Form.Label>
                     <Form.Control name="Name" as="textarea" rows={1} placeholder="Enter Name!" onBlur={handleChange} />
                 </Form.Group>
-                <Form.Group controlId="contactEmail">
-                    <Form.Label htmlFor="email" >Email:</Form.Label>
+                <Form.Group controlId="Email">
+                    <Form.Label  >Email:</Form.Label>
                     <Form.Control name="Email" type="email" placeholder="Enter Email!" onBlur={handleChange} />
                 </Form.Group>
-                <Form.Group controlId="contactMessage">
-                    <Form.Label htmlFor="message">Message:</Form.Label>
+                <Form.Group controlId="Message">
+                    <Form.Label >Message:</Form.Label>
                     <Form.Control name="Message" as="textarea" rows={3} placeholder="Enter your message here!" onBlur={handleChange} />
 
                 </Form.Group>
@@ -61,10 +61,13 @@ function Contact() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <Button variant="primary" type="submit">
+            </Form>
+            <div id="contactButton">
+                <Button variant="outline-primary" type="submit">
                     Submit!
                 </Button>
-            </Form>
+            </div>
+
         </section>
     );
 }
