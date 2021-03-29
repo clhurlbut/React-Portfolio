@@ -57,6 +57,10 @@ a {
   font-weight: bold;
 }
 
+h3 {
+  text-align: center;
+}
+
 a:hover {
   text-decoration: underline;
   color: var(--fifth);

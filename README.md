@@ -48,7 +48,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
  
  ## 🖥️ Links 
 GitHub: https://github.com/clhurlbut/react-portfolio <br>
-Deployed Github Pages: http://clhurlbut.github.io/react-portfolio/ <br>
+Deployed Github Pages: https://clhurlbut.github.io/React-Portfolio/ <br>
 
   ## 🧑‍🤝‍🧑 Contributing
    [Contributor Covenant](https://www.contributor-covenant.org/)
