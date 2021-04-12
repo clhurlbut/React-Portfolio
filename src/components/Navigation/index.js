@@ -7,11 +7,10 @@ function Navigation(props) {
     const tabs = ['About', 'Contact', 'Projects', 'Resume'];
     return (
         <Navbar className="header">
-            <Navbar.Brand href="#about">🐴 Cassandra Hurlbut</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Brand><a href={'/'}>🐴 Cassandra Hurlbut</a></Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-
                     {tabs.map(tab => (
                         <Nav.Link key={tab}>
                             <a
@@ -26,8 +25,6 @@ function Navigation(props) {
                             </a>
                         </Nav.Link>
                     ))}
-
-
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

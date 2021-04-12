@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 main {
   margin: 0 auto;
   max-width: 90%;
@@ -5,15 +9,6 @@ main {
 }
 
 :root {
-  --primary: #02080c;
-  --secondary: #F75C03;
-  --tertiary: #F1C40F;
-  --fourth: #D90368;
-  --fifth: #00CC66;
-  --light: #04507c;
-  --lighter: #2a9adb;
-  --dark: #01020a;
-  --darker: #070300;
   --error: tomato;
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -21,10 +16,6 @@ main {
   --header-img: url(./assets/photos/rainbowbrick.jpg);
   --footer-img: url(./assets/photos/rainbowbrick.jpg);
   --flipcard-img: url(./assets/photos/rainbowbrick-flipcard.jpg);
-}
-
-* {
-  box-sizing: border-box;
 }
 
 html, body {
@@ -78,6 +69,7 @@ header a {
   font-size: 30px;
 }
 
+/* 
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -88,7 +80,7 @@ button {
   cursor: pointer;
   margin: 0 1px;
   background-color: var(--secondary);
-}
+} */
 
 button:hover {
   opacity: 0.8;
@@ -101,19 +93,19 @@ button[disabled] {
 
 .bio-img {
   max-width: 40%;
-  height: fit-content;
 }
 
-img {
+#flip-img {
   max-width: 70%;
   padding-top: 28px;
   padding-bottom: 8px;
 }
 
-form {
+/* form {
   display: flex;
-}
+} 
 
+ 
 input {
   font-size: 1rem;
   padding: 0.25rem;
@@ -121,16 +113,17 @@ input {
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
-}
+} */
 
 input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
+/* 
 li {
   list-style: none;
-}
+} */
 
 nav a:hover {
   text-decoration: underline;
@@ -146,12 +139,12 @@ nav li {
   cursor: pointer;
 }
 
-textarea {
+/* textarea {
   max-width: 600px;
   height: 120px;
   border: 3px solid #cccccc;
   padding: 5px;
-}
+} */
 
 .download h2 a {
   color: var(--tertiary);
@@ -161,7 +154,7 @@ textarea {
   color: var(--fifth);
 }
 
-.margin {
+/* .margin {
   margin: 0 auto;
   margin-top: 1em;
 }
@@ -197,7 +190,7 @@ textarea {
 
 #contactButton {
   text-align: center;
-}
+} */
 
 #flip-card {
   background-color: transparent;
@@ -253,10 +246,10 @@ textarea {
   padding: 3px;
 }
 
-.card {
-  /* width: 25%; */
+/* .card {
+   width: 25%; 
   text-align: center;
-}
+} 
 
 /* 
 button {
@@ -286,19 +279,16 @@ button {
   color: var(--secondary);
 }
 
-footer {
+#footer {
   position: sticky;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
   background-image: var(--footer-img);
+}
+
+#footer-img {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 #footerLink {
   color: #01020a;
-  font-style: bold;
-  padding: 2px 7px 2px 7px;
 }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 
 import { validateEmail } from '../../../utils/helpers';
 
@@ -39,7 +41,7 @@ function Contact() {
     };
 
     return (
-        <section id='Contact'>
+        <Container id='Contact' fluid>
             <h3><strong>Contact Me!</strong></h3>
 
             <Form className="flex-wrap" onSubmit={handleSubmit}>
@@ -62,13 +64,14 @@ function Contact() {
                     </div>
                 )}
             </Form>
-            <div id="contactButton">
-                <Button variant="outline-primary" type="submit">
+            <Container>
+                <Button variant="outline-primary" type="submit" id="contactButton">
                     Submit!
                 </Button>
-            </div>
+            </Container>
 
-        </section>
+
+        </Container>
     );
 }
 
