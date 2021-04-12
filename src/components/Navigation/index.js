@@ -7,7 +7,7 @@ function Navigation(props) {
     const tabs = ['About', 'Contact', 'Projects', 'Resume'];
     return (
         <Navbar className="header">
-            <Navbar.Brand><a href={'/'}>🐴 Cassandra Hurlbut</a></Navbar.Brand>
+            <Navbar.Brand><a href={'#about'}>🐴 Cassandra Hurlbut</a></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
