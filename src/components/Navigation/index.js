@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 function Navigation(props) {
     const tabs = ['About', 'Contact', 'Projects', 'Resume'];
     return (
-        <Navbar className="header">
+        <Navbar id="responsive-navbar-nav" className="header">
             <Navbar.Brand><a href={'/React-Portfolio'}>🐴 Cassandra Hurlbut</a></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
