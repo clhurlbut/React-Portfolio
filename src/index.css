@@ -69,19 +69,6 @@ header a {
   font-size: 30px;
 }
 
-/* 
-button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
-} */
-
 button:hover {
   opacity: 0.8;
 }
@@ -101,29 +88,10 @@ button[disabled] {
   padding-bottom: 8px;
 }
 
-/* form {
-  display: flex;
-} 
-
- 
-input {
-  font-size: 1rem;
-  padding: 0.25rem;
-  border: 1px solid var(--dark);
-  outline: none;
-  border-radius: 3px;
-  transition: box-shadow 0.2s;
-} */
-
 input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
-
-/* 
-li {
-  list-style: none;
-} */
 
 nav a:hover {
   text-decoration: underline;
@@ -139,13 +107,6 @@ nav li {
   cursor: pointer;
 }
 
-/* textarea {
-  max-width: 600px;
-  height: 120px;
-  border: 3px solid #cccccc;
-  padding: 5px;
-} */
-
 .download h2 a {
   color: var(--tertiary);
 }
@@ -153,44 +114,6 @@ nav li {
 .download h2 {
   color: var(--fifth);
 }
-
-/* .margin {
-  margin: 0 auto;
-  margin-top: 1em;
-}
-
-.container {
-  margin: 10px 5px 10px 5px;
-  padding: 5px;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.flex-row {
-  display: flex;
-}
-
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.space-around {
-  justify-content: space-around;
-}
-
-.flex-end {
-  justify-content: flex-end;
-}
-
-#contactButton {
-  text-align: center;
-} */
 
 #flip-card {
   background-color: transparent;
@@ -245,35 +168,6 @@ nav li {
 .project-description {
   padding: 3px;
 }
-
-/* .card {
-   width: 25%; 
-  text-align: center;
-} 
-
-/* 
-button {
-  background: var(--primary);
-  border: 0;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  padding: 10px 15px;
-}
- */
-
-/* a {
-  border-radius: 5px;
-  color: var(--primary);
-  font-weight: 600;
-  padding: 2px 4px;
-  margin-left: -2px;
-  margin-right: -2px;
-}
- */
 
 #navActive {
   color: var(--secondary);
