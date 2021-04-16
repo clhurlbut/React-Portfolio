@@ -44,7 +44,7 @@ function Contact() {
         <Container id='Contact' fluid>
             <h3><strong>Contact Me!</strong></h3>
 
-            <Form className="flex-wrap" onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit}>
                 <Form.Group controlId="Name">
                     <Form.Label >Name:</Form.Label>
                     <Form.Control name="Name" as="textarea" rows={1} placeholder="Enter Name!" onBlur={handleChange} />
