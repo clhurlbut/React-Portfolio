@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 function Navigation(props) {
     const tabs = ['About', 'Contact', 'Projects', 'Resume'];
     return (
-        <Navbar expand="md" className="header">
+        <Navbar collapseOnSelect expand="md" className="header">
             <Container>
                 <Navbar.Brand><a href={'/React-Portfolio'}>🐴 Cassandra Hurlbut</a></Navbar.Brand>
 
