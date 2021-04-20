@@ -6,7 +6,7 @@ import resume from '../../../assets/resume/CLHurlbutResume.pdf';
 
 function Resume() {
     return (
-        <Container fluid>
+        <Container fluid="md">
             <Row id='Resume'>
                 <Col className="tech-skills">
 
@@ -42,19 +42,15 @@ function Resume() {
                     </ul>
                 </Col>
                 <Col className="addl-skills">
-                    <div> <h2><a href={resume} download="CLHurlbutResume.pdf"> Download Resume </a></h2></div>
+                    <div className="download-resume-div"> <h2><a className="download-resume-a" href={resume} download="CLHurlbutResume.pdf"> Download Resume </a></h2></div>
 
 
                     <h2><strong>Additional Skills</strong></h2>
                     <ul>
-                        <li>Managerial Skills</li>
                         <li>Constant Contact and DonorPerfect Database Management</li>
                         <li>Social Media Management</li>
-                        <li>FinalCut Pro, full Adobe Creative Suite</li>
-
+                        <li>Microsoft Office, G-Suite, FinalCut Pro, Adobe Creative Suite</li>
                     </ul>
-
-
                 </Col>
 
 

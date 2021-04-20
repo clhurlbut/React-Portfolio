@@ -6,6 +6,7 @@ main {
   margin: 0 auto;
   max-width: 90%;
   padding: 50px 30px;
+  background-color: blanchedalmond;
 }
 
 :root {
@@ -29,7 +30,6 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--darker);
   color: var(--lighter);
   font-family: 'Nexa Demo', bold;
 }
