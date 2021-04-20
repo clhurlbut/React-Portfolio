@@ -21,7 +21,6 @@ function Navigation(props) {
                                 <a
                                     href={'#' + tab.toLowerCase()}
                                     onClick={() => props.handlePageChange(tab)}
-                                    activeClassName="navActive"
                                     className={
                                         props.currentPage === tab ? 'nav-link active' : 'nav-link'
                                     }

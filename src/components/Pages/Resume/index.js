@@ -6,8 +6,8 @@ import resume from '../../../assets/resume/CLHurlbutResume.pdf';
 
 function Resume() {
     return (
-        <Container fluid="md">
-            <Row id='Resume'>
+        <Container id='Resume' fluid="md">
+            <Row >
                 <Col className="tech-skills">
 
                     <h2><strong>Education</strong></h2>
