@@ -16,7 +16,7 @@ function Resume() {
                     <p> Magna Cum Laude, 2012 </p>
                     <h4><strong>UCLA Extension</strong></h4>
                     <span><b>Certificate in Full-Stack Web Development</b></span>
-                    <p> In Progress, estimated completion date April 2021</p>
+                    <p>Completed April 2021</p>
 
                 </Col>
                 <Col>
